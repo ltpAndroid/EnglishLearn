@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_store"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.setting.AddStoreActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="46dp"
+        android:background="#F6F6F6">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_details_back"
+            android:text="商店"
+
+            android:textColor="#007AFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布商品"
+            android:textColor="#0e0e0e"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="#067FFF"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:background="#D9D9D9"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="22dp"
+        android:background="@drawable/roundcorner_bg_et_addstudent"
+        android:layout_marginRight="22dp"
+        android:layout_width="match_parent"
+        android:hint="商品名称:"
+        android:maxLines="1"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:paddingLeft="8dp"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:id="@+id/et_info"
+        android:layout_below="@+id/et_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="22dp"
+        android:maxLines="3"
+        android:textSize="13sp"
+        android:background="@drawable/roundcorner_bg_et_addstudent"
+        android:layout_marginRight="22dp"
+        android:layout_width="match_parent"
+        android:text="兑换商品前请联系前台老师"
+        android:hint="商品描述:"
+        android:textColor="#212121"
+        android:gravity="center|left"
+        android:paddingLeft="8dp"
+        android:layout_height="30dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_et"
+        android:orientation="horizontal"
+        android:layout_below="@+id/et_info"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="22dp"
+        android:gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_gold"
+            android:layout_width="0dp"
+            android:hint="兑换金币数:"
+            android:gravity="center|left"
+            android:textSize="13sp"
+            android:paddingLeft="8dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_bg_et_addstudent"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/et_score"
+            android:layout_width="0dp"
+            android:hint="兑换积分数:"
+            android:textSize="13sp"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_bg_et_addstudent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_below="@+id/ll_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:overScrollMode="never" />
+
+</RelativeLayout>

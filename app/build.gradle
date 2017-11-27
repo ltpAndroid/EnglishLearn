@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.tarena.app"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //多选图片相关解决rxjava冲突
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+
+    })
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    testCompile 'junit:junit:4.12'
+    //********************************
+    //ButterKnife
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //Picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    //compile 'cn.bmob.android:http-legacy:1.0'
+    //侧滑菜单
+    compile 'com.android.support:design:26.1.0'
+    //表情
+//    compile 'com.tb.emoji:yykEmoji:1.0.0'
+    //多选图片
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.0'
+    //ProgressHud
+    compile 'com.kaopiz:kprogresshud:1.1.0'
+    //轮播图
+    compile 'com.youth.banner:banner:1.4.10'
+
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //环信相关
+    compile 'com.google.android.gms:play-services-gcm:11.6.0'
+    compile 'com.hyphenate:hyphenate-sdk:3.3.0'
+    //动态权限
+    compile 'com.lovedise:permissiongen:0.0.6'
+    //录音
+    compile 'com.lqr.audio:library:1.0.0'
+
+    compile 'cn.bmob.android:bmob-sdk:3.5.8'
+
+//    compile files('libs/BmobSDK_3.5.6_20170705.jar')
+//    compile files('libs/okio-1.12.0.jar')
+//    compile files('libs/org.apache.http.legacy.jar')
+//    compile files('libs/rxandroid-1.2.0.jar')
+//    compile files('libs/rxjava-1.1.6.jar')
+
+}

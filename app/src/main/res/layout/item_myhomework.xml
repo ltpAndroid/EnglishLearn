@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#070707"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_tv_time"
+        android:layout_below="@+id/item_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:textSize="14sp"
+        android:textColor="#6E6E6E"
+        android:text=""
+        android:layout_height="wrap_content"
+       />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/yue"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/item_tv_title"
+        android:visibility="invisible"
+        android:id="@+id/ivYue"/>
+
+    <TextView
+        android:text=" 领取奖励 "
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_toRightOf="@+id/item_tv_time"
+        android:layout_alignTop="@+id/item_tv_time"
+        android:layout_alignBottom="@+id/item_tv_time"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_reward"
+        android:visibility="invisible"
+        android:id="@+id/tv_reward"/>
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_store_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tarena.app.ui.StoreDetailsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="46dp"
+        android:background="#F6F6F6">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_details_back"
+            android:text="商店"
+
+            android:textColor="#007AFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商品详情"
+            android:textColor="#0e0e0e"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="删除商品"
+            android:textColor="#067FFF"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:background="#D9D9D9"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+    </RelativeLayout>
+
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rl_title"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/lin"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="11dp"
+        android:background="#E3E3E3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_below="@+id/lin"
+        android:text="商品名称:"
+        android:textSize="13sp"
+        android:layout_marginTop="14dp"
+        android:textColor="#585858"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_store_title"
+        android:layout_toRightOf="@+id/tvname"
+
+        android:layout_alignBottom="@+id/tvname"
+        android:textSize="13sp"
+        android:textColor="#585858"
+        android:text="asdasdasd"
+        android:layout_marginLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvprice"
+        android:layout_below="@+id/tvname"
+        android:text="兑换价格:"
+        android:textSize="13sp"
+        android:textColor="#585858"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_store_score"
+        android:text="100"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/tvprice"
+        android:layout_alignBottom="@+id/tvprice"
+        android:layout_marginLeft="10dp"
+        android:textColor="#585858"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_store_money"
+        android:text="100"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/tv_store_score"
+        android:layout_alignBottom="@+id/tvprice"
+        android:layout_marginLeft="20dp"
+        android:textColor="#585858"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvuploader"
+        android:layout_below="@+id/tvprice"
+        android:text="发布人:"
+        android:textSize="13sp"
+        android:textColor="#585858"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_store_uploader"
+        android:layout_width="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#585858"
+        android:layout_toRightOf="@+id/tvuploader"
+        android:layout_marginLeft="10dp"
+        android:text="sdsd"
+        android:layout_alignBottom="@+id/tvuploader"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvdes"
+        android:layout_below="@+id/tvuploader"
+        android:text="商品介绍:"
+        android:textSize="13sp"
+        android:textColor="#585858"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_store_des"
+        android:layout_toRightOf="@+id/tvdes"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/tvdes"
+        android:background="#E3E3E3"
+        android:padding="10dp"
+        android:text="士大夫哈哈多个i韩国哈哈哈哈过"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

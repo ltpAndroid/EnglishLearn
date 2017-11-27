@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">EasyLearning</string>
+    <string name="title_activity_main_fragment">MainFragmentActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="lucky_monkey_title"></string>
+    <string name="lucky_monkey_times_left"></string>
+    <string name="lucky_monkey_fortune_list"></string>
+
+
+    <string name="voice_rec">手指上滑，取消发送</string>
+    <string name="voice_cancel">松开手指，取消发送</string>
+    <string name="voice_short">录音时间太短</string>
+    <string name="voice_failure">录音失败！</string>
+
+</resources>

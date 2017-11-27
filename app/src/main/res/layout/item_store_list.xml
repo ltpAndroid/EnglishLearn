@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/rl_root"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_iv_store"
+
+        android:layout_centerHorizontal="true"
+        android:layout_width="121dp"
+        android:layout_height="104dp" />
+
+
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:textSize="10sp"
+        android:textColor="#212121"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/item_iv_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_tv_money"
+        android:textColor="#FF2600"
+
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/item_tv_title"
+        android:layout_alignLeft="@+id/item_iv_store"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_tv_score"
+        android:textColor="#FF2600"
+
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:layout_alignRight="@+id/item_iv_store"
+        android:layout_below="@+id/item_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_tv_uploader"
+        android:layout_below="@+id/item_tv_score"
+        android:layout_marginTop="5dp"
+        android:textColor="#AAAAAA"
+        android:layout_alignLeft="@+id/item_iv_store"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_bg"
+        android:layout_width="match_parent"
+        android:background="#FFAB91"
+        android:layout_height="170dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/tv_class"
+            android:text="新概念"
+            android:textSize="14sp"
+
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.tarena.app.views.XCRoundRectImageView
+            android:id="@+id/iv_head"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_my_default_head"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_class"
+            android:layout_height="130dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/iv_head"
+            android:text="isa"
+            android:textSize="17sp"
+            android:textColor="#212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginLeft="40dp"
+            android:text="积分:656"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_alignBottom="@+id/iv_head"
+            android:layout_marginBottom="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_toLeftOf="@+id/iv_head"
+            android:layout_marginRight="40dp"
+            android:text="金币:656"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_alignBottom="@+id/iv_head"
+            android:layout_marginBottom="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_continouslystudy"
+            android:layout_width="wrap_content"
+            android:text="连续学习0天"
+            android:textSize="13sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#212121"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_totalstudy"
+            android:layout_width="wrap_content"
+            android:text="累计学习0天"
+            android:textSize="13sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_addfriend"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:text="添加好友"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_bonus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

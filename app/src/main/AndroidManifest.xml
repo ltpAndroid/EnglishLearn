@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tarena.app">
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.RegistActivity" />
+        <activity android:name=".ui.setting.ChangeMyNickAndHeadActivity" />
+        <activity android:name=".ui.setting.SettingsActivity" />
+        <activity android:name=".ui.classeslist.ClassListActivity" />
+        <activity android:name=".ui.classeslist.AddStudentActivity" />
+        <activity android:name=".ui.classeslist.StudentListActivity" />
+        <activity android:name=".ui.SendingActivity" />
+        <activity android:name=".ui.MessageDetailActivity" />
+        <activity android:name=".ui.PersonDetailsActivity" />
+        <activity android:name=".ui.setting.AddStoreActivity" />
+        <activity android:name=".ui.StoreDetailsActivity" />
+        <activity android:name=".ui.HomeWorkDetailActivity" />
+        <activity android:name=".ui.CheckingHomeworkActivity" />
+        <activity android:name=".ui.CheckingHomrWorkDetailActivity" />
+        <activity android:name=".ui.MyHomeWorkActivity" />
+        <activity android:name=".luckypanel.LuckyPanelActivity" />
+        <activity android:name=".ui.FriendListActivity" />
+        <activity android:name=".ui.setting.ChatActivity" />
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1128171121115005#easychat" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.RequestListActivity"></activity>
+    </application>
+
+</manifest>

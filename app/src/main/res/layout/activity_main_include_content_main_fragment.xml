@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/content_main_fragment"
+>
+
+    <!--之前练习这里用的是  LinearLayout-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/botmenu"
+
+        />
+
+    <!--横线-->
+    <TextView
+        android:background="#929292"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/botmenu"
+        android:layout_height="0.5dp" />
+
+    <!--底部RadioGroup-->
+    <include
+        android:id="@+id/botmenu"
+        layout="@layout/activity_main_include_bot_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

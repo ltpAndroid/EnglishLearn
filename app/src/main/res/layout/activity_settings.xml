@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    tools:context="com.tarena.app.ui.setting.SettingsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#F6F6F6"
+        android:elevation="5dp">
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_top_back" />
+
+        <TextView
+            android:id="@+id/tv_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#0e0e0e"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_clearcache"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="50dp"
+
+        android:background="@drawable/selector_my_rl_pressed">
+
+        <ImageView
+            android:id="@+id/iv_clearcache"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_usersetting" />
+
+        <TextView
+            android:id="@+id/tv_clearcache"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_clearcache"
+            android:gravity="center_vertical"
+            android:text="清除缓存"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#C8C7CC" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_changepassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rl_clearcache"
+        android:layout_marginTop="50dp"
+
+        android:background="@drawable/selector_my_rl_pressed">
+
+        <ImageView
+            android:id="@+id/iv_changpassword"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_usersetting" />
+
+        <TextView
+            android:id="@+id/tv_changpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_changpassword"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_changpassword"
+            android:layout_alignParentBottom="true"
+            android:background="#C8C7CC" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_changenickandhead"
+        android:layout_below="@+id/rl_changepassword"
+        android:background="@drawable/selector_my_rl_pressed"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_changenickandhead"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_usersetting"
+            android:layout_marginLeft="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/tv_changenickandhead"
+            android:gravity="center_vertical"
+            android:textColor="#212121"
+            android:text="修改名字和头像"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_changenickandhead"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="#C8C7CC"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/tv_changenickandhead"
+            android:layout_height="0.5dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_logout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rl_changenickandhead"
+
+
+        android:background="@drawable/selector_my_rl_pressed">
+
+        <ImageView
+            android:id="@+id/iv_logout"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_usersetting" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_logout"
+            android:gravity="center_vertical"
+            android:text="切换账户"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#C8C7CC" />
+    </RelativeLayout>
+
+</RelativeLayout>

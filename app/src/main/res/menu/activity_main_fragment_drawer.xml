@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none"
+
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_circle_normal"
+
+            android:title="首页" />
+
+
+        <item
+            android:id="@+id/nav_chatlist"
+            android:icon="@drawable/ic_chatlist"
+            android:title="聊天列表" />
+        <item
+            android:id="@+id/nav_friendlist"
+            android:icon="@drawable/ic_circle_normal"
+            android:title="好友列表" />
+        <item
+            android:id="@+id/nav_classlist"
+            android:icon="@drawable/ic_classlist"
+            android:title="班级列表" />
+        <item
+            android:id="@+id/nav_studentlist"
+            android:icon="@drawable/ic_studentlist"
+            android:title="学生列表" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="设置" />
+    </group>
+
+
+
+</menu>

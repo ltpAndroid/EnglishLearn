@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- 当勾选时 -->
+    <item 
+        android:state_pressed="true"
+        android:drawable="@drawable/roundcorner_regist_preseed"
+
+        />
+    
+    <!-- 其它状态 -->
+    <item 
+        android:drawable="@drawable/roundcorner_regist_normal"
+        />
+
+</selector>

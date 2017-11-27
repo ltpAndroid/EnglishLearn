@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="添加班级"
+                android:textColor="#212121"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_classname"
+                android:layout_below="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:hint="班级名称"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:textColor="#212121"
+                android:textColorHint="#888888" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_login_button"
+                android:text="提交"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/et_classname"
+                android:layout_width="200dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

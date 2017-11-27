@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="6dp"
+        android:textSize="16sp"
+        android:text="积分榜"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/rl_rank"
+        android:orientation="horizontal"
+
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/bg_rank"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_below="@+id/tv_title"
+
+       >
+
+        <com.tarena.app.views.CircleImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/cm1"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_my_default_head"
+            android:layout_height="40dp"
+            />
+
+        <com.tarena.app.views.CircleImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/cm2"
+            android:padding="10dp"
+            android:src="@drawable/ic_my_default_head"
+
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp"
+           />
+
+        <com.tarena.app.views.CircleImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/cm3"
+            android:src="@drawable/ic_my_default_head"
+
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+
+             />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_name_and_score"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@+id/rl_rank"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name_1"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:text=""
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_score_1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_name_1"
+                android:textColor="#DDB041"
+                android:text=""
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name_2"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:text=""
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_score_2"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_name_2"
+                android:textSize="10sp"
+                android:textColor="#DDB041"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name_3"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:text=""
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_score_3"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_name_3"
+                android:textSize="10sp"
+                android:textColor="#DDB041"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

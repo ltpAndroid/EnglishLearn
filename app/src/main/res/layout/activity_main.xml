@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--侧滑所需布局-->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <!--悬浮按键所需布局-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".ui.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Toolbar 所需布局-->
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#F5F5F5"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:theme="@style/ToolbarTheme">
+
+                    <TextView
+                        android:id="@+id/tv_checkhomework"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="检查作业"
+                        android:textColor="#449AFD"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_title_toolbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="title"
+                        android:textColor="#141414"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnRight"
+                        style="@style/Widget.AppCompat.ActionButton.Overflow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="18dp"
+                        android:gravity="right"
+                        android:textColor="#007AFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+
+            <!--fragment布局-->
+            <include layout="@layout/activity_main_include_content_main_fragment" />
+        </LinearLayout>
+
+        <!--悬浮按键-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="10dp"
+            android:background="#6F9AE7"
+            app:srcCompat="@drawable/ic_write" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!--侧滑菜单-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main_fragment"
+        app:itemTextColor="#000000"
+        app:menu="@menu/activity_main_fragment_drawer" />
+
+</android.support.v4.widget.DrawerLayout>
